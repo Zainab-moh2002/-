@@ -1,0 +1,71 @@
+﻿@model ChildData
+<!-- نموذج بيانات الطفل -->
+<div class="form-container" method="post">
+    <h2>بيانات الطفل</h2>
+    <form asp-action="Create" onsubmit="goToQRCodePage(event)">
+        <!-- اسم الطفل -->
+        <label asp-for="ChildName">اسم الطفل</label>
+        <input type="text" asp-for="ChildName" placeholder="أدخل اسم الطفل" required>
+
+        <!-- تاريخ ميلاد الطفل -->
+        <label asp-for="BirthDate">تاريخ ميلاد الطفل</label>
+        <input type="date" asp-for="BirthDate" required oninput="calculateAge()">
+
+        <!-- حقل يظهر العمر -->
+        <div id="age-container" style="color: black;">
+            <p id="age-result"></p>
+        </div>
+
+        <label asp-for="Weight">وزن الطفل</label>
+        <input type="number" asp-for="Weight" placeholder="أدخل وزن الطفل (بالكيلوغرام)" required>
+
+        <label asp-for="ParentRelation">هل يوجد حالة قرابة بين الأم والأب؟</label>
+        <select asp-for="ParentRelation" required>
+            <option value="" disabled selected>اختر </option>
+            <option value="yes">نعم</option>
+            <option value="no">لا</option>
+        </select>
+
+        <label asp-for="WaterBreak">هل نزلت على الأم مياه قبل الولادة؟</label>
+        <select asp-for="WaterBreak" onchange="toggleWaterBreakDuration()" required>
+            <option value="" disabled selected>اختر </option>
+            <option value="yes">نعم</option>
+            <option value="no">لا</option>
+        </select>
+
+        <!-- هذا الحقل سيظهر فقط إذا تم اختيار "نعم" -->
+        <div id="water-duration-container" style="display: none;">
+            <label asp-for="WaterDuration">كم المدة بين نزول الماء والولادة؟ (بالأيام)</label>
+            <input type="number" asp-for="WaterDuration" placeholder="أدخل عدد الأيام" min="0">
+        </div>
+
+        <label asp-for="BirthType">هل الولادة طبيعية أم قيصرية؟</label>
+        <select asp-for="BirthType" required>
+            <option value="" disabled selected>اختر </option>
+            <option value="natural">طبيعية</option>
+            <option value="cesarean">قيصرية</option>
+        </select>
+
+        <label asp-for="Diagnosis">التشخيص</label>
+        <input type="text" asp-for="Diagnosis" placeholder="ادخل تشخيص الطفل" required>
+        <label asp-for="AttendingPhysicianGrade">درجه الطبيب المعالج</label>
+        <select asp-for="AttendingPhysicianGrade" required>
+            <option value="" disabled selected>اختر </option>
+            <option value="natural">اخصائي</option>
+            <option value="cesarean">استشاري</option>
+        </select>
+        <label asp-for="Role">الوظيفه</label>
+        <select  asp-for="Role" required>
+            <option value="" disabled selected>اختر </option>
+            <option value="natural">دكتور</option>
+            <option value="cesarean">ممرض مبتسرين</option>
+        </select>
+
+        <label asp-for="PhoneNumber">رقم التليفون</label>
+        <input type="text" asp-for="PhoneNumber" placeholder="ادخل رقم التليفون" required>
+
+
+        <!-- زر الحفظ -->
+        <button type="submit">تسجيل</button>
+    </form>
+</div>

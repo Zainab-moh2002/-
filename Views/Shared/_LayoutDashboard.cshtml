@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بيانات الطفل</title>
+    <link rel="stylesheet" href="~/lib/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<nav class="navchild">
+    <div class="logo"><img src="~/lib/logo.jpg" alt="لوجو النظام" height="50"></div>
+    <a class="home-link" href="child_form_ar.html">الصفحة الرئيسيه</a>
+</nav>
+@RenderBody()
+    <script>
+        function goToQRCodePage(event) {
+            event.preventDefault();
+            window.location.href = 'qr_code_page_ar.html';
+        }
+
+        function toggleMenu() {
+            document.querySelector('.language-container').classList.toggle('active');
+        }
+
+        function toggleWaterBreakDuration() {
+            var waterBreakSelect = document.getElementById('water-break');
+            var waterDurationContainer = document.getElementById('water-duration-container');
+
+            if (waterBreakSelect.value === 'yes') {
+                waterDurationContainer.style.display = 'block';
+            } else {
+                waterDurationContainer.style.display = 'none';
+            }
+        }
+
+        // حساب عمر الطفل
+        function calculateAge() {
+            var birthDate = new Date(document.getElementById('child-birthdate').value);
+            var today = new Date();
+
+            var ageYears = today.getFullYear() - birthDate.getFullYear();
+            var ageMonths = today.getMonth() - birthDate.getMonth();
+            var ageDays = today.getDate() - birthDate.getDate();
+
+            if (ageDays < 0) {
+                ageMonths--;
+                ageDays += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+            }
+            if (ageMonths < 0) {
+                ageYears--;
+                ageMonths += 12;
+            }
+
+            // عرض العمر
+            document.getElementById('age-result').innerText = `عمر الطفل: ${ageYears} سنة و ${ageMonths} شهر و ${ageDays} يوم`;
+        }
+
+        // Function to change language and redirect to a specific page
+        function setLanguage(lang) {
+            if (lang === 'ar') {
+                window.location.href = 'child_form_ar.html';
+            } else if (lang === 'en') {
+                window.location.href = 'child_form_en.html';
+            }
+        }
+
+        // Close the menu if clicked outside
+        window.onclick = function (event) {
+            if (!event.target.matches('.globe-icon')) {
+                var dropdowns = document.getElementsByClassName("language-container");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('active')) {
+                        openDropdown.classList.remove('active');
+                    }
+                }
+            }
+        }
+    </script>
+<footer class="footerchild">
+    <div class="footer-content2">
+        <a href="حول.html">حول</a>
+        <br>
+        <a href="سياسة الخصوصيه.html">سياسة الخصوصية</a>
+    </div>
+    <div class="footer-content">
+        <p>&copy; حقوق الطبع والنشر <strong>medicio</strong> جميع الحقوق محفوظة</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+</footer>
+</body>
+</html>

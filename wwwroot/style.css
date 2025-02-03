@@ -1,0 +1,405 @@
+    body {
+        font-family: 'Arial', sans-serif;
+        font-size: 1.2rem;
+        /* Increase font size for the entire page */
+    }
+
+    /* Increase the height of the header */
+    header {
+        height: 150px;
+    }
+
+    /* Custom background color for the header */
+    .custom-header {
+        background-color: #0b2144;
+    }
+
+    /* Custom button color (same as header color) */
+    .custom-btn {
+        background-color: #0b2144;
+        border-color: #0b2144;
+        color: white;
+    }
+
+    .custom-btn:hover {
+        background-color: #083a5b;
+        border-color: #083a5b;
+    }
+
+    /* Remove borders for the buttons */
+    button {
+        border: none;
+    }
+
+    .modal-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    /* Change label color to light grey */
+    .form-label {
+        color: black;
+        /* Light grey */
+    }
+
+    .form-control {
+        background-color: rgb(244, 237, 237);
+    }
+
+    /* Change color of Google and Facebook buttons to light grey */
+    .btn-light {
+        background-color: #f0f0f0;
+        border-color: #d3d3d3;
+        color: #333;
+    }
+
+    .btn-light:hover {
+        background-color: #d3d3d3;
+        color: #000;
+    }
+
+    /* Change the file upload icon to "attach files" */
+    .bi-paperclip {
+        font-size: 1.5rem;
+        /* Increase icon size */
+    }
+
+    /* Add blur effect when modals are open */
+    .modal-backdrop {
+        backdrop-filter: blur(5px);
+    }
+
+    .me-2 {
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+    }
+
+    .search-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #0b2144;
+        /* الخلفية باللون المطلوب */
+        overflow: hidden;
+        padding: 10px;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .search-box div {
+        flex: 1 1 calc(25% - 10px);
+        max-width: 500px;
+        /* لتحديد عرض العناصر */
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+    }
+
+    .search-button {
+        background-color: #006dcc;
+        color: white;
+        border: none;
+        width: 500px;
+        /* عرض زر البحث */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        height: 60px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 50px auto;
+        /* لتوسيط الزر */
+    }
+
+    .search-button:hover {
+        background-color: #005bb5;
+    }
+
+    /* تغيير خلفية الحاوية المحيطة */
+    .container2 {
+        background-color: #0b2144;
+        /* لون الخلفية المطلوب */
+        padding: 10px;
+        /* مساحة داخلية حول المحتوى */
+        width: 100%;
+        /* التحكم في عرض الحاوية */
+        margin: 0px auto;
+        /* لتوسيط الحاوية في الصفحة */
+    }
+
+    .icon-box {
+        text-decoration: none;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #0b2144;
+        color: white;
+        width: 3000px;
+        border-radius: 20px;
+    }
+
+    .icon-box:hover {
+        background-color: #005bb5;
+
+    }
+
+    .icon-box i {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .card img {
+        height: 200px;
+        /* توحيد ارتفاع الصور داخل الكروت */
+        object-fit: cover;
+        /* جعل الصور ملائمة لحدودها دون تشويه */
+    }
+
+    .card-body {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100% - 200px);
+        /* تأخذ باقي مساحة الكارد */
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        /* تحريك الكارد للأعلى */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* تعزيز تأثير الظل */
+    }
+
+    .footer-content2 a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        /* زيادة حجم النص */
+    }
+
+    .footer-content2 a:hover {
+        background-color: gray;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+
+    .footer-content {
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        /* زيادة حجم النص */
+        margin: 3px 0;
+        /* زيادة المسافة بين الأسطر */
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        /* محاذاة الأيقونات في المنتصف */
+        align-items: center;
+        /* محاذاة الأيقونات عمودياً */
+        margin: 10px 0;
+        /* زيادة الهوامش العلوية والسفلية */
+    }
+
+    .social-icons a {
+        color: #e0eaf4;
+        font-size: 25px;
+        /* زيادة حجم الأيقونات */
+        margin: 0 15px;
+        /* زيادة المسافة بين الأيقونات */
+        text-decoration: none;
+    }
+
+    .social-icons a:hover {
+        color: #05151d;
+    }
+
+    .footer {
+        background-color: #0b2144;
+        /* لون الخلفية */
+        padding: 20px;
+        /* زيادة الحشو */
+        height: 150px;
+        /* زيادة ارتفاع الفوتر */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* محاذاة المحتوى عمودياً في المنتصف */
+        align-items: center;
+        /* محاذاة المحتوى أفقياً في المنتصف */
+        text-align: center;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 600px) {
+        .search-box div {
+            flex: 1 1 calc(80% - 10px);
+            /* Adjust boxes to 50% on small screens */
+        }
+
+        .search-button {
+            width: 100px
+                /* Full width on smaller screens */
+        }
+    }
+
+    @media (min-width: 601px) and (max-width: 900px) {
+        .search-box div {
+            flex: 1 1 calc(33.33% - 10px);
+            /* Adjust boxes to 33.33% on medium screens */
+        }
+    }
+
+    /* تغيير اسم body */
+    .body-custom {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: white;
+    }
+
+    /* تنسيق الهيدر */
+    .header-custom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #0b2144;
+        color: white;
+    }
+
+    /* تنسيق الزر */
+    .home-button-custom {
+        background-color: #0b2144;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .home-button-custom:hover {
+        background-color: #005bb5;
+    }
+
+    /* تفاصيل العنوان */
+    .details-header-custom {
+        background-color: #002952;
+        color: white;
+        padding: 20px;
+    }
+
+    /* تنسيق النجوم */
+    .rating-stars-custom {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .rating-stars-custom i.fas {
+        color: white;
+        -webkit-text-stroke: 1px #dfe5eb;
+    }
+
+    .rating-stars-custom i.fas.selected,
+    .rating-stars-custom i.fas:hover,
+    .rating-stars-custom i.fas:hover~i.fas {
+        color: gold;
+        -webkit-text-stroke: none;
+    }
+
+    /* الحاوية الخاصة بالخريطة */
+    .map-container-custom {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .map-container-custom iframe {
+        border: 0;
+        width: 80%;
+        height: 400px;
+    }
+
+    /* زر التسجيل */
+    .register-button-custom {
+        display: block;
+        margin: 30px auto;
+        width: 150px;
+        height: 40px;
+        background-color: #002952;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+    }
+
+    .register-button-custom:hover {
+        background-color: rgb(63, 107, 239);
+    }
+
+    /* تنسيق الحاوية الخاصة بالتقييم */
+    .rating-container-custom {
+        margin-top: 20px;
+    }
+
+    #ratingValue {
+        color: inherit;
+        /* أو اللون الذي تريده */
+        font-size: 1.2rem;
+    }
+
+    .stars-custom {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .stars-custom i {
+        color: #ccc;
+        transition: color 0.3s;
+    }
+
+    .stars-custom i.gold {
+        color: gold;
+    }
+
+    h4.custom-title,
+    p.custom-paragraph {
+        color: #002952;
+        font-size: 24px;
+    }

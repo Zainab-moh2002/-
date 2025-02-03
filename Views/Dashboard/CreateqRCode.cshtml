@@ -1,0 +1,16 @@
+﻿@model GraduationProject.Models.QRCodeModel
+
+
+<div class="container">
+    <form>
+        <label for="qrText">الكود</label>
+        <input type="text" id="qrText" name="qrText" placeholder="ادخل كود الطفل">
+        <button type="submit" onclick="generateQRCode()">انشئ الكود</button>
+        <div class="form-group">
+            <img src="@ViewBag.QRCode" class="img-thumbnail" />
+        </div>
+    </form>
+</div>
+
+
+

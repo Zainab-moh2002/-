@@ -1,0 +1,72 @@
+﻿@model HomePageViewModel
+
+<div class="container2">
+            <div class="search-box">
+                <div>
+                    <label for="city">المحافظة</label>
+                    <select id="city" class="searchable-select">
+                        <option value="">اختر المحافظة</option>
+                        @foreach (var loc in Model.Cities)
+                        {
+                        <option value="@loc.Id">@loc.Name</option>
+                        
+                        }
+                        <!-- المزيد من الخيارات -->
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="to">المركز</label>
+                    <select id="to" class="searchable-select">
+                        <option value="">اختر المركز</option>
+                @foreach (var loc in Model.Locations)
+                {
+                    <option data-city="@loc.CityId" value="@loc.Id">@loc.Name</option>
+                }
+            </select>
+                </div>
+            </div>
+            <div>
+                <button id="search-button" class="search-button">بحث</button>
+            </div>
+        </div>
+        <div class="icon-container mt-3 d-flex justify-content-center">
+            <a href="price.html" class="icon-box me-3 icon-box-price"> 
+              <i class="bi bi-currency-dollar"></i>
+              <p>السعر</p>
+            </a>
+            <a href="rate.html" class="icon-box me-3 icon-box-rating"> 
+              <i class="bi bi-star"></i>
+              <p>التقييم</p>
+            </a>
+            <a href="location.html" class="icon-box icon-box-location"> 
+              <i class="bi bi-geo-alt"></i>
+              <p>الموقع</p>
+            </a>
+          </div>
+<div class="container mt-4">
+    <div class="row">
+                 @foreach (var item in Model.Cards)
+                 {
+                     
+              
+                <div class="col-md-4 mb-4">
+                    <div class="card" onclick="openMap()">
+                        <a href="map.html?id=6">
+                            <img src="@item.Image"
+                                class="card-img-top" alt="Modern Incubator">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.Name</h5>
+                                <p class="card-text">@item.Describtion</p>
+                                <p class="star-rating" id="star-rating-6"></p>  
+                                <p class="text-muted">@item.Rate reviews</p>
+                                <p class="text-primary">@item.Price ج.م لليلة</p>
+                            </div>
+                
+                        </a>
+                    </div>
+                </div>
+     
+                }
+        </div>
+    </div>
+</div>
