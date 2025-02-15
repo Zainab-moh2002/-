@@ -38,6 +38,11 @@ namespace GraduationProject.Controllers
             return View(homePageViewModel);
         }
 
+        public IActionResult Details(int id)
+        {
+            var result = _context.Details.FirstOrDefault(x => x.CardId == id);
+            return View(result);
+        }
         public IActionResult Privacy()
         {
             return View();

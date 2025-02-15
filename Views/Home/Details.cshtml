@@ -1,0 +1,92 @@
+﻿@model  GraduationProject.Models.IncubatorDetails
+<center>
+    <h2 class="query"><b>تفاصيل عن حضَانه</b></h2>
+</center>
+<main>
+    
+    <div class="content-container">
+        <p>@Model.Address</p>
+
+        <div class="media-container">
+            <div id="map" style="height: 400px; width: 100%;"></div>
+            <div class="card">
+                <video controls class="w-100">
+                    <source src="@Model.VideoPath" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <a asp-controller="Booking" asp-action="Create" asp-route-id="@Model.Id" class="btn btn-primary">
+            احجز الآن
+        </a>
+    </div>
+</main>
+@* <span>@Model.Latitude, @Model.Longitude</span> *@
+@section Scripts {
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        let map = L.map('map').setView([@Model.Latitude, @Model.Longitude], 20); // تكبير المدى ليشمل المنيا
+
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        let availableHospitals = [
+            {
+                hospital: { name: "@Model.Name", type: "حكومي", rating: 4.2 },
+                contact: { phone: "@Model.Phone", website: "https://example.com/susan-mubarak" },
+                location: { latitude: @Model.Latitude, longitude:@Model.Longitude }
+            }
+        ];
+
+        availableHospitals.forEach(h => {
+            let desc = `<h3>${h.hospital.name}</h3>
+                        <p>النوع: ${h.hospital.type} - التقييم: ⭐${h.hospital.rating}</p>
+                        <p>📞 الهاتف: ${h.contact.phone}</p>
+                        <p>🔗 <a href="${h.contact.website}" target="_blank">الموقع الإلكتروني</a></p>`;
+
+            L.marker([h.location.latitude, h.location.longitude])
+                .addTo(map)
+                .bindPopup(desc);
+        });
+
+
+        // استخراج معرف الحضانة من رابط الصفحة
+        function getNurseryName() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const nurseryId = urlParams.get('id');
+
+            const nurseries = {
+                "1": "الحضانة المفتوحة Radiant Warmer",
+                "2": "الحضانة المغلقة Isolette Incubator",
+                "3": "العناية لحديثي الولادة NICU Incubator",
+                "4": "حاضنة أطفال حديثي الولادة",
+                "5": "حضانة الرعاية الحرارية",
+                "6": "حاضنة طبية حديثة"
+            };
+
+            if (nurseryId && nurseries[nurseryId]) {
+                document.getElementById("nursery-name").innerText = nurseries[nurseryId];
+            }
+        }
+
+        getNurseryName();
+        </script>
+  @*   <script src="/details.js"></script> *@
+    @* <script>
+        // Initialize map with incubator coordinates
+        var map = L.map('map').setView([@Model.Latitude, @Model.Longitude], 15);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add marker for the incubator
+        L.marker([@Model.Latitude, @Model.Longitude])
+            .addTo(map)
+            .bindPopup('@Model.Address');
+    </script> *@
+}

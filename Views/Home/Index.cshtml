@@ -55,7 +55,7 @@
                             <img src="@item.Image"
                                 class="card-img-top" alt="Modern Incubator">
                             <div class="card-body">
-                                <h5 class="card-title">@item.Name</h5>
+                            <h5 class="card-title"><a href="/Home/Details/@item.Id" class="stretched-link">@item.Name</a></h5>
                                 <p class="card-text">@item.Describtion</p>
                                 <p class="star-rating" id="star-rating-6"></p>  
                                 <p class="text-muted">@item.Rate reviews</p>
@@ -70,3 +70,28 @@
         </div>
     </div>
 </div>
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+
+
+    $(document).ready(function () {
+        // When a governorate (city) is selected
+        $('#city').change(function () {
+            var selectedCityId = $(this).val(); // Get the selected city ID
+
+            // Show or hide the options in the "مركز" dropdown based on selected governorate
+            $('#to option').each(function () {
+                var cityId = $(this).data('city'); // Get the city ID for each center
+                if (selectedCityId == "" || cityId == selectedCityId) {
+                    $(this).show(); // Show this option if it matches or no city is selected
+                } else {
+                    $(this).hide(); // Hide this option if it doesn't match
+                }
+            });
+
+            // Reset the center dropdown when the city changes (optional)
+            $('#to').val('');
+        });
+    });
+</script>

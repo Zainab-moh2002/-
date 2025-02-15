@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z7fwJXxBM8nZ11QL3OEKRVYlpqvx5y+/XDBkI8kH1X8=",
+  "Hash": "xmn9+8DhkJqm2TPftOcXs2B1x0diiurfX4r7UW3VvEw=",
   "Source": "GraduationProject",
   "BasePath": "_content/GraduationProject",
   "Mode": "Default",
@@ -1319,6 +1319,48 @@
       "OriginalItemSpec": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GraduationProject.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\details.css",
+      "SourceId": "GraduationProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\",
+      "BasePath": "_content/GraduationProject",
+      "RelativePath": "details#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "51ovxjo34v",
+      "Integrity": "abhyeSbySs9ySCkB7YVj5YSAbWs6aoCPZ6cRsUPZH0U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\details.css"
+    },
+    {
+      "Identity": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\details.js",
+      "SourceId": "GraduationProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\",
+      "BasePath": "_content/GraduationProject",
+      "RelativePath": "details#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\details.js"
+    },
+    {
       "Identity": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\face.png",
       "SourceId": "GraduationProject",
       "SourceType": "Discovered",
@@ -1380,6 +1422,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\google.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\index.html",
+      "SourceId": "GraduationProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\",
+      "BasePath": "_content/GraduationProject",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mkdio1m4fv",
+      "Integrity": "NjHekjfNZWASD1QdtoejBCq2QFBsiKvOcPAJTEriMkI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
       "Identity": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -2682,9 +2745,194 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\vedio.mp4",
+      "SourceId": "GraduationProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\",
+      "BasePath": "_content/GraduationProject",
+      "RelativePath": "vedio#[.{fingerprint}]?.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "01r6y5sxqr",
+      "Integrity": "VGRjF3AcCCdW9D4ppFYM051+R2v8SlFPh9GVesQVbYE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\vedio.mp4"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "details.51ovxjo34v.css",
+      "AssetFile": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\details.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"abhyeSbySs9ySCkB7YVj5YSAbWs6aoCPZ6cRsUPZH0U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 18:35:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "51ovxjo34v"
+        },
+        {
+          "Name": "label",
+          "Value": "details.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-abhyeSbySs9ySCkB7YVj5YSAbWs6aoCPZ6cRsUPZH0U="
+        }
+      ]
+    },
+    {
+      "Route": "details.5ipweew5fc.js",
+      "AssetFile": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\details.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 20:10:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "details.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "details.css",
+      "AssetFile": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\details.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"abhyeSbySs9ySCkB7YVj5YSAbWs6aoCPZ6cRsUPZH0U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 18:35:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-abhyeSbySs9ySCkB7YVj5YSAbWs6aoCPZ6cRsUPZH0U="
+        }
+      ]
+    },
+    {
+      "Route": "details.js",
+      "AssetFile": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\details.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 20:10:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
     {
       "Route": "face.5dmfw8c632.png",
       "AssetFile": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\face.png",
@@ -5312,6 +5560,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1538"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NjHekjfNZWASD1QdtoejBCq2QFBsiKvOcPAJTEriMkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 19:57:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NjHekjfNZWASD1QdtoejBCq2QFBsiKvOcPAJTEriMkI="
+        }
+      ]
+    },
+    {
+      "Route": "index.mkdio1m4fv.html",
+      "AssetFile": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1538"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NjHekjfNZWASD1QdtoejBCq2QFBsiKvOcPAJTEriMkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 19:57:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mkdio1m4fv"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NjHekjfNZWASD1QdtoejBCq2QFBsiKvOcPAJTEriMkI="
         }
       ]
     },
@@ -10396,6 +10726,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-1u/RjX7q2Rbuo8nqjRn1xVmJdzwD/vj8elBEBHQKSCQ="
+        }
+      ]
+    },
+    {
+      "Route": "vedio.01r6y5sxqr.mp4",
+      "AssetFile": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\vedio.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4385493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VGRjF3AcCCdW9D4ppFYM051+R2v8SlFPh9GVesQVbYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 19:35:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "01r6y5sxqr"
+        },
+        {
+          "Name": "label",
+          "Value": "vedio.mp4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VGRjF3AcCCdW9D4ppFYM051+R2v8SlFPh9GVesQVbYE="
+        }
+      ]
+    },
+    {
+      "Route": "vedio.mp4",
+      "AssetFile": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\vedio.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4385493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VGRjF3AcCCdW9D4ppFYM051+R2v8SlFPh9GVesQVbYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 19:35:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VGRjF3AcCCdW9D4ppFYM051+R2v8SlFPh9GVesQVbYE="
         }
       ]
     }

@@ -1,6 +1,9 @@
+wwwroot\details.css
+wwwroot\details.js
 wwwroot\face.png
 wwwroot\favicon.ico
 wwwroot\google.jpeg
+wwwroot\index.html
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
@@ -63,3 +66,4 @@ wwwroot\lib\style.css
 wwwroot\logo1.jpg
 wwwroot\script.js
 wwwroot\style.css
+wwwroot\vedio.mp4

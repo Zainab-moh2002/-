@@ -16,6 +16,7 @@ namespace GraduationProject.Data
         public DbSet<City> Cities { get; set; }
         public DbSet<QRCodeModel> Models { get; set; }
         public DbSet<ChildData> Childs { get; set; }
+        public DbSet<IncubatorDetails> Details { get; set; }
 
     }
 }

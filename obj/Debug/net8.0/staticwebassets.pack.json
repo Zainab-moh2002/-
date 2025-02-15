@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\GraduationProject.xgh7pzz2e6.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\details.css",
+      "PackagePath": "staticwebassets\\details.css"
+    },
+    {
+      "Id": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\details.js",
+      "PackagePath": "staticwebassets\\details.js"
+    },
+    {
       "Id": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\face.png",
       "PackagePath": "staticwebassets\\face.png"
     },
@@ -15,6 +23,10 @@
     {
       "Id": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\google.jpeg",
       "PackagePath": "staticwebassets\\google.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
     },
     {
       "Id": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -263,6 +275,10 @@
     {
       "Id": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\style.css",
       "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\zeinab\\Desktop\\TestGit\\GraduationProject\\GraduationProject\\wwwroot\\vedio.mp4",
+      "PackagePath": "staticwebassets\\vedio.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GraduationProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -536,3 +536,4 @@ C:\Users\zeinab\Desktop\TestGit\GraduationProject\GraduationProject\obj\Debug\ne
 C:\Users\zeinab\Desktop\TestGit\GraduationProject\GraduationProject\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\zeinab\Desktop\TestGit\GraduationProject\GraduationProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\zeinab\Desktop\TestGit\GraduationProject\GraduationProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\zeinab\Desktop\TestGit\GraduationProject\GraduationProject\obj\Debug\net8.0\GraduationProject.sourcelink.json
